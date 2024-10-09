@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Produtos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <ul>
+        <!-- Thymeleaf usa 'th:each' para iterar sobre a lista de produtos -->
+        <li th:each="produto : ${produtos}" th:text="${produto}"></li>
+    </ul>
+</body>
+</html>
